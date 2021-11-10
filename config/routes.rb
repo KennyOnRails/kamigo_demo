@@ -30,6 +30,7 @@ Rails.application.routes.draw do
 
   # 測試用
   get "test", to: "home#test"
+  get "你好嗎", to: "home#greeting"
 
   # 查詢當下的使用者
   get "profile", to: "home#profile"
