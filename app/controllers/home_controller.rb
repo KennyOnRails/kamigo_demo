@@ -1,4 +1,5 @@
 class HomeController < ApplicationController
+  skip_before_action :verify_authenticity_token
   include Kamigo::Clients::LineClient
 
   # before_action :authenticate_user
